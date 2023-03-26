@@ -2,7 +2,7 @@ const reloj = document.querySelector('#reloj');
 
 const mecanismo = ()=>{
     let tiempo = new Date();
-    let horas = tiempo.getHours();
+    let horas = (tiempo.getHours()%12);
     let minutos = tiempo.getMinutes();
     let segundos = tiempo.getSeconds();
 
